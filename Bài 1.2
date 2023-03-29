@@ -1,0 +1,10 @@
+float sum(float x ,int n)
+{
+	if (n == 0) {
+		return 0;
+	}
+	if (n == 1) {
+		return x;
+		return (1 + x / n) * sum(x, n - 1) - (x / n) * sum(x, n / 2);
+	}
+}
